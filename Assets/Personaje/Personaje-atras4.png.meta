@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Personaje-atras4_0: -2201976314624557531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
