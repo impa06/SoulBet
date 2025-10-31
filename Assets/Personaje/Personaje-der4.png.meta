@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Personaje-der4_0: -5078727235228128423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

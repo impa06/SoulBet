@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Personaje-izq4_0: -2231408916451753782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
