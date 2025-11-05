@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
 
     private Vector2 movementInput;
 
+    private Animator animator;
+
 
 
 
@@ -20,8 +22,9 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
 
     }
@@ -34,6 +37,10 @@ public class Player : MonoBehaviour
         movementInput.y = Input.GetAxisRaw("Vertical");
 
         movementInput = movementInput.normalized;
+
+        animator.SetFloat("Horizontal", movementInput.x);
+        animator.SetFloat("Vertical", movementInput.y);
+        animator.SetFloat("Speed", movementInput.magnitude);
 
 
     }
