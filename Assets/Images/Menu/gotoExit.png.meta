@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 79e8f3d5a69a82346816b46674f1fe22
+guid: 0dc419aa40d873145bcbcc602995619a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5215043539992956954
-    second: Imagen menu 1_0
+      213: 708206416345906248
+    second: Gemini_Generated_Image_ikyugtikyugtikyu-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Imagen menu 1_0
+      name: Gemini_Generated_Image_ikyugtikyugtikyu-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 1536
-        height: 1024
+        width: 790
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ef2686e78170a7b0800000000000000
-      internalID: -5215043539992956954
+      spriteID: 84c33f1cbfd04d900800000000000000
+      internalID: 708206416345906248
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Imagen menu 1_0: -5215043539992956954
+      Gemini_Generated_Image_ikyugtikyugtikyu-removebg-preview_0: 708206416345906248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

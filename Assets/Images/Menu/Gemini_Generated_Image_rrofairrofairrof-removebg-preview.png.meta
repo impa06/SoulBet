@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 79e8f3d5a69a82346816b46674f1fe22
+guid: 5da30cc16a7470545a7ae97f077c8646
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5215043539992956954
-    second: Imagen menu 1_0
+      213: 2307417815191993086
+    second: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_0
+  - first:
+      213: -635132619198069069
+    second: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_1
+  - first:
+      213: 3519144223802077133
+    second: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_2
+  - first:
+      213: 6070158964408799865
+    second: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Imagen menu 1_0
+      name: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 287
+        y: 565
+        width: 12
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ef2686e78170a7b0800000000000000
-      internalID: -5215043539992956954
+      spriteID: efa3de61748950020800000000000000
+      internalID: 2307417815191993086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 86
+        width: 299
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b68f677f3e8f27f0800000000000000
+      internalID: -635132619198069069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 524
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf271db60386d030800000000000000
+      internalID: 3519144223802077133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gemini_Generated_Image_rrofairrofairrof-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 80
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9725db3ca698d3450800000000000000
+      internalID: 6070158964408799865
       vertices: []
       indices: 
       edges: []
@@ -147,8 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Imagen menu 1_0: -5215043539992956954
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
