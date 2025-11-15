@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     public GameObject optionsMenu;
-    public GameObject Menu;
+    public GameObject Menu; // panel principal
+
+    private const string PREF_KEY = "SeenCinematic";
 
     public void OpenOptionsPanel()
     {
@@ -28,8 +30,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
         Application.Quit();
     }
 
+    // Asociar este método al botón "Jugar"
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        // Si ya vio la cinemática -> carga directamente la escena de juego
+        if (PlayerPrefs.GetInt(PREF_KEY, 0) == 1)
+        {
+            SceneManager.LoadScene("SampleScene");
+            return;
+        }
+
+        // Si no la vio -> cargar la escena de la cinemática
+        SceneManager.LoadScene("SceneCinematic");
     }
 }
