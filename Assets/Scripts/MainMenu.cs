@@ -43,4 +43,13 @@ public class MenuManager : MonoBehaviour
         // Si no la vio -> cargar la escena de la cinemática
         SceneManager.LoadScene("SceneCinematic");
     }
+
+    [ContextMenu("Reset SeenCinematic")]
+    public void ResetSeenCinematic()
+    {
+        PlayerPrefs.DeleteKey(PREF_KEY);
+        PlayerPrefs.Save();
+        Debug.Log("PlayerPrefs key '" + PREF_KEY + "' borrada. La cinemática se podrá ver otra vez.");
+    }
+
 }
