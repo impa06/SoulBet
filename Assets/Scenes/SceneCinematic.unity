@@ -162,31 +162,31 @@ MonoBehaviour:
     text: "Bienvenido, M\xE1ximo. Has tardado\u2026 aunque la desesperaci\xF3n suele
       ser puntual.\nTe hicimos la invitaci\xF3n porque sab\xEDamos que no te quedaba
       nada m\xE1s que apostar."
-    minDisplaySeconds: 4.8
+    minDisplaySeconds: 4
   - speakerName: "M\xE1ximo:"
     text: "\u2026No vine por gusto. Solo necesito dinero\u2026 lo suficiente para
       pagar lo que debo.\nSi este lugar es tan milagroso como dec\xEDan, entonces
       repartir las cartas y ya."
-    minDisplaySeconds: 4.5
+    minDisplaySeconds: 4
   - speakerName: 'Demonio:'
     text: "Aqu\xED no se apuesta dinero, M\xE1ximo\u2026 se apuesta el alma.\nY t\xFA
-      lo sabes, ell caos siempre ha caminado contigo."
-    minDisplaySeconds: 5.3
+      lo sabes, el caos siempre ha caminado contigo."
+    minDisplaySeconds: 5
   - speakerName: "M\xE1ximo:"
     text: "Eso no fue culpa m\xEDa\u2026 algo estaba mal en esas m\xE1quinas\u2026
       igual que aqu\xED.\nPero si tengo que jugar para salir, jugar\xE9."
-    minDisplaySeconds: 3
+    minDisplaySeconds: 2.5
   - speakerName: 'Demonio:'
     text: "Perfecto.\nCada apuesta es un paso m\xE1s dentro de nosotros.\nGana, y
       sentir\xE1s un alivio que hace a\xF1os no conoces.\nPierde\u2026 y el casino
       cobrar\xE1 lo que le pertenece."
-    minDisplaySeconds: 4
+    minDisplaySeconds: 3.5
   - speakerName: 'Demonio:'
     text: "Mientras pueda salir de aqu\xED, acepto el trato."
-    minDisplaySeconds: 2
+    minDisplaySeconds: 1.5
   - speakerName: 'Demonio:'
     text: "Entonces si\xE9ntate, ingeniero ca\xEDdo.\nEl juego comienza ahora."
-    minDisplaySeconds: 3
+    minDisplaySeconds: 2.5
   allowClickToAdvance: 1
   skipKey: 32
   extraPauseBetweenLines: 0.12
@@ -495,6 +495,135 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &379328618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379328620}
+  - component: {fileID: 379328619}
+  m_Layer: 0
+  m_Name: typing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &379328619
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379328618}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9bd05f6494005d049bafc1fa2c706f77, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9bd05f6494005d049bafc1fa2c706f77, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &379328620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379328618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 443.9208, y: 233.80249, z: -4.1761703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585503561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,3 +1280,4 @@ SceneRoots:
   - {fileID: 241572118}
   - {fileID: 1378318676}
   - {fileID: 107019281}
+  - {fileID: 379328620}
