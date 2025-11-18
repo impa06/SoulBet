@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class InteractMachine : MonoBehaviour
@@ -52,3 +52,4 @@ public class InteractMachine : MonoBehaviour
         }
     }
 }
+*/
