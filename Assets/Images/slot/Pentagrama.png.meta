@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pentagrama_0: 3629630196919129827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
