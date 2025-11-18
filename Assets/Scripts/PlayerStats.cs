@@ -1,23 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
 
-    public int money = 100;
-    public int spinCost = 10;
-    public int reward = 50;
+    [Header("Vidas")]
+    public int maxLives = 3;
     public int lives = 3;
 
-    // Estos solo se usan en SceneMain
-    public Image heart1;
-    public Image heart2;
-    public Image heart3;
-    public TMP_Text moneyText;
+    [Header("Economía")]
+    public int money = 100;
+    public int baseMoney = 100;
 
-    private void Awake()
+    void Awake()
     {
         if (instance == null)
         {
@@ -27,58 +22,43 @@ public class PlayerStats : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            return;
         }
     }
 
-    private void Start()
+    public void SubtractMoney(int amount)
     {
-        UpdateHUD();
-    }
-
-    public void SpendMoney()
-    {
-        money -= spinCost;
+        money -= amount;
 
         if (money <= 0)
         {
+            money = 0;
             LoseLife();
-            money = 50;
         }
-
-        UpdateHUD();
     }
 
-    public void AddMoney()
+    public void AddMoney(int amount)
     {
-        money += reward;
-        UpdateHUD();
+        money += amount;
     }
 
-    public void LoseLife()
+    void LoseLife()
     {
         lives--;
 
-        UpdateHearts();
+        // ⭐⭐ ACTUALIZAR HUD ⭐⭐
+        if (HeartsHUD.instance != null)
+            HeartsHUD.instance.UpdateHearts();
 
-        if (lives <= 0)
+        if (lives > 0)
         {
-            Debug.Log("GAME OVER");
+            // Resetear dinero si quedan vidas
+            money = baseMoney;
         }
-    }
-
-    public void UpdateHUD()
-    {
-        if (moneyText != null)
-            moneyText.text = "Dinero: " + money;
-
-        UpdateHearts();
-    }
-
-    private void UpdateHearts()
-    {
-        if (heart1 != null) heart1.enabled = lives >= 1;
-        if (heart2 != null) heart2.enabled = lives >= 2;
-        if (heart3 != null) heart3.enabled = lives >= 3;
+        else
+        {
+            money = 0;
+            Debug.Log("GAME OVER — el jugador no tiene más vidas.");
+            // Aquí puedes cargar escena de Game Over si quieres
+        }
     }
 }
