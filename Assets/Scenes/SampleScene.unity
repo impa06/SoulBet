@@ -32634,6 +32634,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1513987631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513987633}
+  - component: {fileID: 1513987632}
+  m_Layer: 0
+  m_Name: HeartsHUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1513987632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513987631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d29f0de5ebbd9c4db64e2f49b69d84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 1908466563}
+  - {fileID: 109938293}
+  - {fileID: 1599817476}
+--- !u!4 &1513987633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513987631}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523770591
 GameObject:
   m_ObjectHideFlags: 0
@@ -33700,6 +33748,7 @@ GameObject:
   - component: {fileID: 1555731849}
   - component: {fileID: 1555731851}
   - component: {fileID: 1555731850}
+  - component: {fileID: 1555731852}
   m_Layer: 5
   m_Name: Dinero
   m_TagString: Untagged
@@ -33746,7 +33795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Dinero: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33825,6 +33874,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555731848}
   m_CullTransparentMesh: 1
+--- !u!114 &1555731852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555731848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6350d79182a444e9829c4ed95fa2fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyText: {fileID: 1555731850}
 --- !u!1 &1568952169
 GameObject:
   m_ObjectHideFlags: 0
@@ -35468,14 +35530,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6808dd874bf5a20428ef3ab31e58ab53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 100
-  spinCost: 10
-  reward: 50
+  maxLives: 3
   lives: 3
-  heart1: {fileID: 0}
-  heart2: {fileID: 0}
-  heart3: {fileID: 0}
-  moneyText: {fileID: 1555731850}
+  money: 100
+  baseMoney: 100
 --- !u!1 &2009540946
 GameObject:
   m_ObjectHideFlags: 0
@@ -36529,6 +36587,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 1513987633}
   - {fileID: 1198769715}
   - {fileID: 1783742697}
   - {fileID: 1972315460}
